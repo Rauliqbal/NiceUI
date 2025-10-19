@@ -13,44 +13,50 @@ const { data: navigation } = await useAsyncData("navigation", () => {
 
 <template>
   <div>
-    <!-- Header -->
+    <!-- HEADER -->
     <AppNavbar />
 
+    <!-- MAIN -->
     <main class="min-h-screen">
       <div class="w-full max-w-[90rem] mx-auto sm:px-6 lg:px-8">
         <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
-          <!-- ASIDE -->
+          <!-- SIDEBAR -->
           <aside
-            class="sticky top-18 self-start lg:col-span-2 w-72 p-6 overflow-y-auto hidden md:block"
+            class="hidden md:block lg:col-span-2 border-r border-slate-200 dark:border-slate-800"
           >
-            <nav class="space-y-8">
-              <div v-for="section in navigation" :key="section.path">
-                <h2
-                  class="text-sm font-semibold text-neutral-500 uppercase tracking-wide mb-3 flex items-center gap-2"
-                >
-                  <Icon
-                    v-if="section.icon"
-                    :name="section.icon"
-                    class="w-4 h-4"
-                  />
-                  {{ section.title }}
-                </h2>
-                <ul class="pl-3">
-                  <li v-for="link in section.children" :key="link.path">
-                    <NuxtLink
-                      :to="link.path"
-                      class="block py-1.5 pr-2 pl-3 border-l border-slate-200 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-400 hover:text-primary hover:bg-slate-100 dark:hover:bg-slate-800"
-                      :class="{
-                        '!text-primary font-medium border-l border-l-primary dark:border-l-primary ':
-                          route.path === link.path,
-                      }"
-                    >
-                      {{ link.title }}
-                    </NuxtLink>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+            <div
+              class="sticky top-24 h-[calc(100vh-5rem)] overflow-y-auto pb-10"
+            >
+              <nav class="space-y-8">
+                <div v-for="section in navigation" :key="section.path">
+                  <h2
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-200 uppercase tracking-wide mb-3 flex items-center gap-2"
+                  >
+                    <Icon
+                      v-if="section.icon"
+                      :name="section.icon"
+                      class="w-4 h-4"
+                    />
+                    {{ section.title }}
+                  </h2>
+
+                  <ul class="pl-3">
+                    <li v-for="link in section.children" :key="link.path">
+                      <NuxtLink
+                        :to="link.path"
+                        class="block py-1.5 pr-2 pl-3 border-l border-slate-300 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-400 hover:text-primary hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        :class="{
+                          '!text-primary font-medium border-l border-l-primary dark:border-l-primary':
+                            route.path === link.path,
+                        }"
+                      >
+                        {{ link.title }}
+                      </NuxtLink>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
           </aside>
 
           <!-- BODY -->
@@ -60,5 +66,7 @@ const { data: navigation } = await useAsyncData("navigation", () => {
         </div>
       </div>
     </main>
+
+    <AppFooter />
   </div>
 </template>

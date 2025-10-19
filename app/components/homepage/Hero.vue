@@ -30,7 +30,7 @@
       </div>
       <div class="mx-auto">
         <div class="relative">
-          <img
+          <NuxtImg
             class="px-5"
             src="/images/hero-img.png"
             alt="Level-up your coding skill with design handoff"
