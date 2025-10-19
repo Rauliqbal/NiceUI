@@ -30,7 +30,12 @@ const navlinks = [
       <!-- Logo -->
       <div class="flex items-center gap-1.5 lg:flex-1">
         <NuxtLink class="flex items-center gap-2" to="/">
-          <NuxtImg width="40" height="40" src="/logo.png" />
+          <NuxtImg
+            width="40"
+            height="40"
+            src="/images/logo.png"
+            alt="NiceUI Tailwind Component"
+          />
           <h1 class="font-alatsi text-3xl font-semibold dark:text-slate-100">
             NiceUI
           </h1>
