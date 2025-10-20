@@ -56,7 +56,7 @@ definePageMeta({
   <template v-if="page">
     <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
       <!-- BODY:CONTENT -->
-      <div class="lg:col-span-8 px-4">
+      <div class="lg:col-span-8 md:px-4">
         <article class="prose dark:prose-invert container">
           <ContentRenderer :value="page" />
         </article>
