@@ -1,21 +1,30 @@
 {
-  "name": "niceui",
+  "name": "nizeui",
   "version": "0.0.1",
   "main": "index.js",
   "type": "module",
   "description": "Component Library built with Tailwind CSS",
   "author": "Rauliqbal",
   "license": "MIT",
-  "scripts": {
-    "publish": "npm publish"
-  },
+  "scripts": {},
   "files": [
     "index.js",
     "src"
   ],
   "keywords": [
+    "nizeui",
     "tailwind",
-    "component-library",
+    "tailwind-css",
+    "tailwind css",
+    "tailwind react",
+    "tailwind vue",
+    "tailwind plugin",
+    "tailwind component",
+    "ui",
+    "css",
+    "css library",
+    "framework",
+    "component library",
     "ui"
   ],
   "devDependencies": {
