@@ -1,6 +1,6 @@
 export const NICEUI_COLORS = {
-  PRIMARY: "#6E8CFB",
-  PRIMARY_HOVER: "#819AF3",
+  PRIMARY: "#5373e7ff",
+  PRIMARY_HOVER: "#6787FD",
 
   // Utilities
   WHITE: "white",

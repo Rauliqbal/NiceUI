@@ -21,10 +21,33 @@ const primaryButton = {
 };
 
 const secondaryButton = {
-  "@apply bg-gray-200 text-gray-800 shadow-sm hover:bg-gray-300": {},
+  "@apply bg-gray-800 shadow-sm hover:bg-gray-600": {},
+  color: NICEUI_COLORS.WHITE,
+  backgroundColor: "var(--niceui-color-secondary)",
+
+  "@media (prefers-color-scheme: dark)": {
+    backgroundColor: "#25252B",
+    "&:hover": {
+      backgroundColor: "#34343A",
+    },
+    color: NICEUI_COLORS.WHITE,
+  },
+};
+
+const outlineButton = {
+  "@apply bg-transparent focus:outline-none border": {},
+  borderColor: "var(--ui-primary)",
+  color: "var(--ui-primary)",
+
+  "&:hover": {
+    backgroundColor: "var(--ui-primary)",
+    color: NICEUI_COLORS.WHITE,
+  },
 };
 
 export default {
   ".btn": baseButtons,
   ".btn-primary": primaryButton,
+  ".btn-secondary": secondaryButton,
+  ".btn-outline": outlineButton,
 };
