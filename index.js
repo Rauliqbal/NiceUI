@@ -1,37 +1,26 @@
-const plugin = require('tailwindcss/plugin');
-
-const NICEUI_PRIMARY = '#1A3D64';
-const NICEUI_PRIMARY_HOVER = '#2A5D94'; 
-const NICEUI_BACKGROUND = '#F5E5E1';
-const NICEUI_FOREGOUND = '#1A2A4F';
-
-import buttonComponents from './src/components/button';
+import plugin from 'tailwindcss/plugin'
+import bodyStyles, { themeVariables } from './src/base.js';
+import { NICEUI_DARK_THEME, NICEUI_LIGHT_THEME } from './src/colors.js';
+import buttonComponents from './src/components/button.js';
+import cardComponents from './src/components/card.js';
 
 const allComponents= {
-  ...buttonComponents
+  ...buttonComponents,
+  ...cardComponents
 }
 
-module.exports = plugin(function({ addComponents, addBase,theme }) {
+export default plugin(function({addComponents,addBase}) {
+  // Define all theme variables (:root and .dark
   addBase({
-    'body': {
-    backgroundColor: NICEUI_BACKGROUND,
-    color: NICEUI_FOREGOUND
-    }
-  })
+    ':root': NICEUI_LIGHT_THEME,
+  });
+ addBase({
+    ':is(.dark)': NICEUI_DARK_THEME,
+  });
 
-  // --- KOMPONEN BUTTON (btn) ---
+  // Style Body
+  addBase(bodyStyles);
+  
+  // Style Component
   addComponents(allComponents);
-
-  // --- KOMPONEN CARD (card) ---
-  // addComponents({
-  //   '.card': {
-  //     '@apply bg-white p-6 rounded-xl shadow-lg border border-gray-100': {},
-  //   },
-  //   '.card-title': {
-  //     '@apply text-xl font-bold text-gray-900 mb-2': {},
-  //   },
-  //   '.card-body': {
-  //     '@apply text-gray-600': {},
-  //   }
-  // });
-});
+})

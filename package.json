@@ -1,23 +1,23 @@
 {
   "name": "niceui",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "type": "module",
   "description": "Component Library built with Tailwind CSS",
+  "author": "Rauliqbal",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "npm publish"
   },
   "files": [
     "index.js",
-    "src" 
+    "src"
   ],
   "keywords": [
     "tailwind",
     "component-library",
     "ui"
   ],
-  "author": "Rauliqbal",
-  "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^4.1.16"
   }

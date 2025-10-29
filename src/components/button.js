@@ -1,4 +1,4 @@
-import colors from "../colors.js";
+import colors, { NICEUI_COLORS } from "../colors.js";
 
 const baseButtons = {
   "@apply inline-flex items-center justify-center font-medium rounded-lg px-4 py-2 transition duration-200 ease-in-out cursor-pointer":
@@ -9,12 +9,12 @@ const baseButtons = {
 };
 
 const primaryButton = {
-  backgroundColor: colors.PRIMARY,
-  color: colors.WHITE,
+  backgroundColor: 'var(--ui-primary)',
+  color: NICEUI_COLORS.WHITE,
 
   // Hover
   "&:hover": {
-    backgroundColor: colors.PRIMARY_HOVER,
+    backgroundColor: 'var(--ui-primary-hover)',
   },
   "@apply shadow-md": {},
 };
