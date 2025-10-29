@@ -1,0 +1,9 @@
+export default {
+  PRIMARY: '#1A3D64',
+  PRIMARY_HOVER: '#2A5D94',
+  BACKGROUND: '#F5E5E1',
+  FOREGROUND: '#1A2A4F',
+  WHITE: 'white',
+  GRAY_200: '#E5E7EB',
+  GRAY_800: '#1F2937',
+};

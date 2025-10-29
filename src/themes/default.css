@@ -1,0 +1,7 @@
+/*
+ * NiceUI Base Theme
+ * Anda bisa mendefinisikan variabel CSS atau reset di sini
+ */
+:root {
+  --niceui-color-primary: theme('colors.blue.600');
+}
