@@ -1,26 +1,16 @@
-import colors from '../colors.js'
-
-// '.card': {
-  //     '@apply bg-white p-6 rounded-xl shadow-lg border border-gray-100': {},
-  //   },
-  //   '.card-title': {
-  //     '@apply text-xl font-bold text-gray-900 mb-2': {},
-  //   },
-  //   '.card-body': {
-  //     '@apply text-gray-600': {},
-  //   }
+// import colors from "../colors.js";
 
 const baseCards = {
-  backgroundColor: 'var(--ui-card-bg)',
-  "@apply rounded-xl shadow-lg border border-gray-100" : {},
-}
+  backgroundColor: "var(--ui-card-bg)",
+  "@apply overflow-hidden rounded-xl": {},
+};
 
 const cardBody = {
-  color: 'var(--ui-foregound)',
-  "@apply p-4" :{}
-}
+  color: "var(--ui-foregound)",
+  "@apply p-4 md:p-6": {},
+};
 
 export default {
   ".card": baseCards,
-  ".card-body": cardBody
-}
+  ".card-body": cardBody,
+};

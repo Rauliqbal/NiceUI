@@ -1,22 +1,23 @@
-import colors, { NICEUI_COLORS } from "../colors.js";
+import { NICEUI_COLORS } from "../colors.js";
 
 const baseButtons = {
-  "@apply inline-flex items-center justify-center font-medium rounded-lg px-4 py-2 transition duration-200 ease-in-out cursor-pointer":
+  "@apply inline-flex items-center justify-center font-medium rounded-lg px-4 py-2.5 active:scale-95 transition duration-300 ease-out cursor-pointer":
     {},
   "&.btn-sm": {
-    "@apply text-sm px-3 py-1.5": {},
+    "@apply rounded-md text-sm px-3 py-1.5": {},
+  },
+  "&.btn-lg": {
+    "@apply text-sm px-8 py-4": {},
   },
 };
 
 const primaryButton = {
-  backgroundColor: 'var(--ui-primary)',
+  backgroundColor: "var(--ui-primary)",
   color: NICEUI_COLORS.WHITE,
 
-  // Hover
   "&:hover": {
-    backgroundColor: 'var(--ui-primary-hover)',
+    backgroundColor: "var(--ui-primary-hover)",
   },
-  "@apply shadow-md": {},
 };
 
 const secondaryButton = {

@@ -1,12 +1,11 @@
-import { NICEUI_THEME } from './colors.js'; 
-
-export const themeVariables = NICEUI_THEME; // Export variabel untuk addBase
-
 export const bodyStyles = {
-  'body': {
-    backgroundColor: 'var(--ui-background)',
-    color: 'var(--ui-foreground)',
-  }
+  body: {
+    backgroundColor: "var(--ui-background)",
+    color: "var(--ui-foreground)",
+  },
+  ".container": {
+    "@apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl": {},
+  },
 };
 
-export default bodyStyles; 
+export default bodyStyles;
