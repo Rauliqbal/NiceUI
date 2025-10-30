@@ -9,19 +9,58 @@ seo:
     effortlessly with Docus.
 ---
 
-This template is a ready-to-use documentation template made with [Nuxt UI](https://ui.nuxt.com) to create beautiful & responsive Nuxt applications in minutes.
 
-There are already many websites based on this template:
+**Nice UI** is a lightweight Tailwind CSS component library built for **copy & paste productivity**.  
+We cut out the complexity so you can focus on building.
 
-## Key Features
+No complex setup. No vendor lock-in. Just **minimalist components that work in any frontend** stack you choose.
 
-This template includes a range of features designed to streamline documentation management:
+> **Slogan:** _Nice UI — A simple Tailwind library: easy to use, fast to copy, works everywhere._
 
-- **Powered by** [**Nuxt**](https://nuxt.com): Utilizes the latest Nuxt framework for optimal performance.
-- **Built with** [**Nuxt UI**](https://ui.nuxt.com): Integrates a comprehensive suite of UI components.
-- [**MDC Syntax**](https://content.nuxt.com/usage/markdown) **via** [**Nuxt Content**](https://content.nuxt.com): Supports Markdown with component integration for dynamic content.
-- **Auto-generated Sidebar Navigation**: Automatically generates navigation from content structure.
-- **Full-Text Search**: Includes built-in search functionality for content discovery.
-- **Optimized Typography**: Features refined typography for enhanced readability.
-- **Dark Mode**: Offers dark mode support for user preference.
-- **Extensive Functionality**: Explore the template to fully appreciate its capabilities.
+## ✨ Features
+
+- 🚀 **Copy & Paste Ready** — Just grab a snippet and drop it into your project.
+- 🎨 **Elegant & Minimalist Design** — Clean, modern aesthetics without fluff.
+- ⚡ **Cross Framework** — Works with any stack: React, Vue, Next.js, Svelte, plain HTML, etc.
+- 🌗 **Dark Mode Friendly** (optional on supported components)
+- 📦 **Tailwind v4 Compatible** — Built fully with the new class syntax.
+
+## 💡 How Nice UI Works
+Nice UI is engineered for maximum speed and flexibility. It leverages the power of Tailwind CSS to deliver a purely "copy & paste" experience, ensuring minimal overhead and zero vendor lock-in.
+
+Nice UI's operational model is built on simplicity, requiring no new dependencies beyond your existing Tailwind CSS setup.
+
+## ⚙️ The Mechanics: Copy & Paste Productivity
+Nice UI simplifies development into three core steps:
+
+1. The Core: Pure Tailwind Markup
+Nice UI eliminates the traditional component installation process (like running npm install). Instead, it provides you with pre-styled blocks of HTML/JSX/Vue/Svelte code utilizing Tailwind's utility classes.
+
+### Your Action:
+  1. Go to the Nice UI documentation (e.g., the Card component page).
+  2. Select your desired variant (e.g., Card with Shadow).
+  3. Click the "Copy Code" button.
+  4. Paste the code directly into your frontend project file (.html, .jsx, .vue, etc.).
+
+### How It Functions:
+  1. The snippet you copy is pure markup enriched with Tailwind.
+  2. Since your project already processes Tailwind CSS, these classes are immediately recognized and rendered by the browser, resulting in the clean aesthetic of Nice UI.
+
+2. Zero Vendor Lock-in
+This is the key advantage of Nice UI over component frameworks that require library imports.
+
+### Nice UI DOES NOT Require:
+1. Importing a dedicated JavaScript/React/Vue library.
+2. Any specific context or provider components.
+
+### The Implication:
+  1. You are free to use Nice UI with React, Vue, Next.js, Svelte, or even pure HTML/PHP/JSP—as long as your Tailwind CSS pipeline is active.
+  2. You maintain 100% control over the source code. If you ever decide to move away from Nice UI's styling, you can simply modify the Tailwind classes you pasted, not an imported package.
+  
+  
+3. Effortless Customization
+Since every component is raw, pasted code, modifying its style is straightforward:
+
+Teks penjelasan setelah komponen.
+
+Tailwind v4 Compatible: Built with the latest class syntax, Nice UI ensures efficiency and adherence to modern best practices.

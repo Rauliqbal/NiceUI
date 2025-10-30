@@ -1,14 +1,13 @@
 @import "tailwindcss";
+@plugin "niceui-kit";
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-background: #eff1f5;
-  --color-foreground: oklch(0.145 0 0);
-  --color-primary: #546fff;
-  --font-inter: "Inter", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
   --font-alatsi: "Alatsi", "sans-serif";
+  --color-primary : theme(--color-yellow-500)
 }
 
 @layer base {
@@ -16,24 +15,17 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-[#f4f6fb] dark:bg-slate-900;
+    @apply bg-[#f4f6fb] dark:bg-slate-900 font-poppins;
   }
   section {
     @apply py-12 md:py-24;
   }
 }
 
-@layer components {
-  .container {
-    @apply mx-auto sm:max-w-xl md:!max-w-4xl lg:!max-w-[1120px] xl:!max-w-[90rem] px-4 lg:px-0;
-  }
-  .btn {
-    @apply inline-flex items-center justify-center rounded-lg px-4 py-2  transition-all ease-out focus:outline-none  disabled:opacity-50 disabled:pointer-events-none active:scale-95;
-  }
-}
 
 @layer utilities {
   .desc {
     @apply tracking-wide leading-relaxed text-base lg:text-lg;
   }
 }
+

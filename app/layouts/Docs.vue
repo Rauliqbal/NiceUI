@@ -26,7 +26,7 @@ const { data: navigation } = await useAsyncData("navigation", () => {
 
         <!-- Drawer -->
         <aside
-          class="relative z-50 w-72 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 p-6 overflow-y-auto"
+          class="relative z-50 w-72 bg-white dark:bg-[#15151A] border-r border-slate-200 dark:border-slate-800 p-6 overflow-y-auto"
         >
           <button
             class="absolute top-3 right-3 p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
@@ -53,7 +53,7 @@ const { data: navigation } = await useAsyncData("navigation", () => {
                   <NuxtLink
                     :to="link.path"
                     @click="closeSidebar"
-                    class="block py-1.5 pr-2 pl-3 border-l border-slate-300 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-400 hover:text-primary hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    class="block py-1.5 pr-2 pl-3 border-l border-slate-300 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-400 hover:text-primary dark:hover:bg-slate-800 transition-colors"
                     :class="{
                       '!text-primary font-medium border-l border-l-primary dark:border-l-primary':
                         route.path === link.path,
@@ -97,7 +97,7 @@ const { data: navigation } = await useAsyncData("navigation", () => {
                     <li v-for="link in section.children" :key="link.path">
                       <NuxtLink
                         :to="link.path"
-                        class="block py-1.5 pr-2 pl-3 border-l border-slate-300 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-400 hover:text-primary hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        class="block py-1.5 pr-2 pl-3 border-l border-slate-300 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-400 hover:text-primary dark:hover:bg-slate-800 transition-colors"
                         :class="{
                           '!text-primary font-medium border-l border-l-primary dark:border-l-primary':
                             route.path === link.path,

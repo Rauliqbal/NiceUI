@@ -18,7 +18,7 @@ const navlinks = [
 
 <template>
   <header
-    class="sticky top-0 z-30 py-4 border-b bg-white dark:bg-slate-800 border-gray-300 dark:border-gray-700 transition-all"
+    class="sticky top-0 z-30 py-4 border-b bg-white dark:bg-[#15151A]/40 backdrop-blur-sm border-gray-300 dark:border-gray-700 transition-all"
   >
     <div
       class="w-full container mx-auto flex items-center justify-between gap-4 px-4"

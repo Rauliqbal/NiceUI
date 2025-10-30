@@ -12,13 +12,11 @@ const baseClass =
 const variantClass = computed(() => {
   switch (props.variant) {
     case "secondary":
-      return "bg-gray-500 text-white hover:bg-gray-600 focus:ring-gray-400";
+      return "btn-secondary";
     case "outline":
-      return "border border-gray-300 text-gray-700 hover:bg-gray-200 focus:ring-gray-300";
-    case "ghost":
-      return "bg-transparent text-gray-700 hover:bg-gray-100 focus:ring-gray-200";
+      return "btn-outline";
     default: 
-      return "bg-primary text-white hover:bg-indigo-500 focus:ring-primary";
+      return "bg-primary font-semibold hover:bg-yellow-600";
   }
 });
 </script>

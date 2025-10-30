@@ -20,11 +20,13 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/color-mode",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/mdc",
   ],
   css: ["~/assets/css/main.css"],
   vite: {
     plugins: [tailwindcss()],
   },
+
   colorMode: {
     classSuffix: "",
     preference: "light",
@@ -33,7 +35,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Alatsi: true,
-      Inter: {
+      Poppins: {
         wght: ["400", "500", "600"],
       },
     },

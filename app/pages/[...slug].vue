@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// ... (Kode JavaScript Anda tidak berubah)
 const route = useRoute();
 
 const path = computed(() => {
@@ -55,17 +56,19 @@ definePageMeta({
 <template>
   <template v-if="page">
     <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-10">
-      <!-- BODY:CONTENT -->
-      <div class="lg:col-span-8 md:px-4">
-        <article class="prose dark:prose-invert container">
+      <div class="max-w-2xl mx-auto lg:col-span-7 md:px-4">
+        <article class="prose dark:prose-invert max-w-full">
+          <!-- Page Header -->
+          <UiPageHeader v-if="page.title" :title="page.title" :description="page.description" />
+          <!-- Body Content -->
           <ContentRenderer :value="page" />
         </article>
       </div>
 
-      <!-- BODY:TABLE OF CONTENT -->
+      <!-- Table Of Content -->
       <aside
         v-if="page.body?.toc?.links?.length"
-        class="hidden lg:block lg:col-span-2 sticky top-20 self-start h-[calc(100vh-6rem)] overflow-y-auto p-4 border-l border-gray-200 dark:border-gray-800 text-sm"
+        class="hidden lg:block lg:col-span-3 sticky top-20 self-start h-[calc(100vh-6rem)] overflow-y-auto p-4 border-l border-gray-200 dark:border-gray-800 text-sm"
       >
         <h3 class="font-semibold text-slate-700 dark:text-slate-200 mb-3">
           ON THIS PAGE
@@ -74,7 +77,6 @@ definePageMeta({
         <nav>
           <ul class="space-y-2">
             <li v-for="link in page.body.toc.links" :key="link.id">
-              <!-- Parent link -->
               <NuxtLink
                 :to="`#${link.id}`"
                 class="block py-1 pl-2 border-l border-transparent text-slate-700 dark:text-slate-400 hover:border-primary hover:text-primary transition-colors"
@@ -87,7 +89,6 @@ definePageMeta({
                 {{ link.text }}
               </NuxtLink>
 
-              <!-- Child links -->
               <ul v-if="link.children?.length" class="ml-4 space-y-1">
                 <li v-for="child in link.children" :key="child.id">
                   <NuxtLink
@@ -108,6 +109,8 @@ definePageMeta({
       </aside>
     </div>
   </template>
+
+  <!-- Empty Page -->
   <template v-else>
     <div class="min-h-screen flex items-center justify-center">
       <h1>Page Not Found</h1>
@@ -124,4 +127,36 @@ article :is(h1, h2, h3, h4, h5, h6) {
 .prose a {
   text-decoration: none !important;
 }
+code {
+   font-family: "JetBrains Mono", monospace !important;
+}
+
+.prose code::before,
+code::after {
+   content: "" !important;
+}
+
+.prose-code {
+   background-color: #191b22 !important;
+   border-radius: 8px !important;
+}
+
+.line {
+   color: #adbac7 !important;
+}
+
+.prose table {
+   font-size: 16px;
+   border-width: 1px;
+}
+.prose table thead {
+   background-color: #f1f1f1;
+}
+.prose table tr th,
+.prose table tr td {
+   padding: 12px 16px;
+   border-width: 1px;
+   border-color: #d1d5db;
+}
+
 </style>
