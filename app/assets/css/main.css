@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "Satoshi", sans-serif;
+  --font-cabinet : 'Cabinet Grotesk', sans-serif;
+  --color-primary: var(--primary);
+  --color-bg-dark: #0a0a0a;
+  --color-surface: #121212;
+  --color-green-50: #effdf5;
+  --color-green-100: #d9fbe8;
+  --color-green-200: #b3f5d1;
+  --color-green-300: #75edae;
+  --color-green-400: #00dc82;
+  --color-green-500: #00c16a;
+  --color-green-600: #00a155;
+  --color-green-700: #007f45;
+  --color-green-800: #016538;
+  --color-green-900: #0a5331;
+  --color-green-950: #052e16;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+}
+:root {
+  --background: oklch(1 0 0);
+  --primary: #fdbf28;
+}
+.dark {
+  --background: #0a0a0a;
+}
+
+@layer base {
+  body {
+    @apply bg-background font-sans scroll-smooth;
+  }
+  .container {
+    @apply max-w-7xl mx-auto px-4 lg:px-0
+  }
+  .hero-glow {
+    background: radial-gradient(
+      circle at center,
+      rgba(253, 191, 40, 0.15) 0%,
+      transparent 70%
+    );
+  }
+}
+@layer components {
+  .card {
+    @apply bg-zinc-50 dark:bg-surface rounded-[40px] border border-zinc-200 dark:border-white/5 p-8 
+  }
+}
+@layer utilities {
+  h1,h2,h3 {
+    @apply font-cabinet
+  }
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+  }
+}

@@ -1,33 +1,29 @@
 {
-  "name": "niceui-kit",
-  "version": "0.0.1",
-  "main": "index.js",
+  "name": "NiceUI",
+  "private": true,
   "type": "module",
-  "description": "Component Library built with Tailwind CSS",
-  "author": "Rauliqbal",
-  "license": "MIT",
-  "scripts": {},
-  "files": [
-    "index.js",
-    "src"
-  ],
-  "keywords": [
-    "nizeui",
-    "tailwind",
-    "tailwind-css",
-    "tailwind css",
-    "tailwind react",
-    "tailwind vue",
-    "tailwind plugin",
-    "tailwind component",
-    "ui",
-    "css",
-    "css library",
-    "framework",
-    "component library",
-    "ui"
-  ],
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.98",
+    "@iconify-json/simple-icons": "^1.2.74",
+    "@nuxt/icon": "2.2.1",
+    "@nuxt/ui": "^4.5.1",
+    "nuxt": "^4.4.2",
+    "shiki": "^4.0.2",
+    "tailwindcss": "^4.2.1"
+  },
   "devDependencies": {
-    "tailwindcss": "^4.1.16"
-  }
+    "@nuxt/eslint": "^1.15.2",
+    "eslint": "^10.0.3",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.2.5"
+  },
+  "packageManager": "pnpm@10.32.1"
 }
