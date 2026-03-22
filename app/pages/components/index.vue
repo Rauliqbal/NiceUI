@@ -56,15 +56,16 @@ const components = Object.entries(componentRegistry)
 
     <section class="container py-14">
       <div class="grid grid-cols-3 gap-4">
-        <div class="card" v-for="[key,item] in components" :key="key">
+        <div class="card" v-for="[key, item] in components" :key="key">
           <NuxtLink :to="`/components/${key}`">
             <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-              <Icon :name="item.icon" class="text-primary" />
+              <Icon :name="item.icon" size="24" class="text-primary" />
             </div>
-            <div class="p-4 border rounded hover:bg-gray-50">
-              {{ item.title }}
+            <div class="flex items-center justify-between gap-2">
+              <h4 class="text-2xl font-bold font-cabinet"> {{ item.title }}</h4>
+              <UBadge size="xl" class="rounded-full" variant="soft">{{ item.variants }} Components</UBadge>
             </div>
-          </NuxtLink> 
+          </NuxtLink>
         </div>
       </div>
     </section>

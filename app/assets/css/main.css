@@ -3,7 +3,7 @@
 
 @theme static {
   --font-sans: "Satoshi", sans-serif;
-  --font-cabinet : 'Cabinet Grotesk', sans-serif;
+  --font-cabinet: "Cabinet Grotesk", sans-serif;
   --color-primary: var(--primary);
   --color-bg-dark: #0a0a0a;
   --color-surface: #121212;
@@ -37,7 +37,7 @@
     @apply bg-background font-sans scroll-smooth;
   }
   .container {
-    @apply max-w-7xl mx-auto px-4 lg:px-0
+    @apply max-w-7xl mx-auto px-4 lg:px-0;
   }
   .hero-glow {
     background: radial-gradient(
@@ -49,16 +49,21 @@
 }
 @layer components {
   .card {
-    @apply bg-zinc-50 dark:bg-surface rounded-[40px] border border-zinc-200 dark:border-white/5 p-8 
+    @apply p-8 rounded-3xl bg-zinc-50 dark:bg-surface border border-zinc-200 dark:border-white/5 hover:border-primary/30 transition-all duration-500;
   }
 }
 @layer utilities {
-  h1,h2,h3 {
-    @apply font-cabinet
+  h1,
+  h2,
+  h3 {
+    @apply font-cabinet;
   }
   .noise-bg {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     opacity: 0.03;
     pointer-events: none;
+  }
+  .shiki {
+    @apply p-5 rounded-xl overflow-x-auto;
   }
 }

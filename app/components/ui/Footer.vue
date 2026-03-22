@@ -6,7 +6,7 @@
                     <div class="md:col-span-1">
                         <div class="flex items-center gap-2 mb-6">
                             <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-                                <iconify-icon icon="lucide:zap" class="text-black text-xs"></iconify-icon>
+                                <Icon name="lucide:zap" class="text-black text-xs"/>
                             </div>
                             <span class="text-lg font-bold tracking-tighter text-zinc-900 dark:text-white">NiceUI</span>
                         </div>
@@ -48,10 +48,10 @@
                 <div class="pt-10 border-t border-zinc-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-zinc-500 dark:text-gray-500 text-xs tracking-widest uppercase">
                     <p>© 2024 NICEUI LABS. ALL RIGHTS RESERVED.</p>
                     <div class="flex items-center gap-8">
-                        <span>MADE WITH <iconify-icon icon="lucide:heart" class="inline text-primary"></iconify-icon> BY DEVS</span>
+                        <span>MADE WITH <Icon name="lucide:heart" class="inline text-primary"/>BY DEVS</span>
                         <div class="flex gap-4">
-                            <a href="#" id="footer-social-1" class="hover:text-zinc-900 dark:hover:text-white transition-colors"><iconify-icon icon="lucide:github" class="text-lg"></iconify-icon></a>
-                            <a href="#" id="footer-social-2" class="hover:text-zinc-900 dark:hover:text-white transition-colors"><iconify-icon icon="lucide:twitter" class="text-lg"></iconify-icon></a>
+                            <a href="#" id="footer-social-1" class="hover:text-zinc-900 dark:hover:text-white transition-colors"><Icon name="lucide:github" class="text-lg"/></a>
+                            <a href="#" id="footer-social-2" class="hover:text-zinc-900 dark:hover:text-white transition-colors"><Icon name="lucide:twitter" class="text-lg"/></a>
                         </div>
                     </div>
                 </div>
