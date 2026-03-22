@@ -1,84 +1,60 @@
-![banner](./banner.png)
+# Nuxt Starter Template
 
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/Status-Active-blue)
-![Tailwind](https://img.shields.io/badge/Built_with-Tailwind_CSS_4-38BDF8?logo=tailwindcss)
+[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 
-# ⚡ Nice UI — Lightweight Tailwind components that just work.
+Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
 
-**Nice UI** is a lightweight Tailwind CSS component library built for **copy & paste productivity**.  
-No complex setup. No vendor lock-in. Just **minimalist components that work in any frontend stack**.
+- [Live demo](https://starter-template.nuxt.dev/)
+- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
 
-> **Slogan:** _Nice UI — A simple Tailwind library: easy to use, fast to copy, works everywhere._
+<a href="https://starter-template.nuxt.dev/" target="_blank">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
+    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png" width="830" height="466">
+  </picture>
+</a>
 
----
+> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
 
-## ✨ Features
+## Quick Start
 
-- 🚀 **Copy & Paste Ready** — Just grab a snippet and drop it into your project.
-- 🎨 **Elegant & Minimalist Design** — Clean, modern aesthetics without fluff.
-- ⚡ **Cross Framework** — Works with any stack: React, Vue, Next.js, Svelte, plain HTML, etc.
-- 🌗 **Dark Mode Friendly** (optional on supported components)
-- 📦 **Tailwind v4 Compatible** — Built fully with the new class syntax.
-
----
-
-## 🧱 Ready-to-Use Components
-
-### Buttons
-
-- Primary
-- Outline
-- Icon Button
-
-### Cards
-
-- Simple Card
-- Product Card (Coming Soon)
-
-### Forms
-
-- Input Field (Coming Soon)
-- Toggle Switch (Coming Soon)
-
-### Navigation
-
-- Navbar (Coming Soon)
-- Breadcrumb (Coming Soon)
-
-### Feedback
-
-- Alert (Coming Soon)
-- Badge (Coming Soon)
-- Modal (Coming Soon)
-
----
-
-## 🤝 Contributing
-
-```bash
-# Clone repository
-git clone https://github.com/Rauliqbal/NiceUI.git
-
-COOMING SOON
+```bash [Terminal]
+npm create nuxt@latest -- -t ui
 ```
 
-Contribution Guidelines :
+## Deploy your own
 
-- Keep components framework-agnostic (HTML + Tailwind only)
-- Follow existing naming & spacing conventions
-- Include preview + code snippet for each component
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
 
----
+## Setup
 
-## ❤️ Sponsors
+Make sure to install the dependencies:
 
-If you love the project and want to support maintenance & new components, consider sponsoring!
+```bash
+pnpm install
+```
 
-Not yet accepting sponsors, but if you're interested, open an issue or DM!
+## Development Server
 
----
+Start the development server on `http://localhost:3000`:
 
-## 📄 License
+```bash
+pnpm dev
+```
 
-Nice UI is licensed under the MIT License — free for personal & commercial use.
+## Production
+
+Build the application for production:
+
+```bash
+pnpm build
+```
+
+Locally preview production build:
+
+```bash
+pnpm preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
