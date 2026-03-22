@@ -72,7 +72,7 @@
       <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
-            class="p-8 rounded-3xl bg-zinc-50 dark:bg-surface border border-zinc-200 dark:border-white/5 group hover:border-primary/30 transition-all duration-500">
+            class="card">
             <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
               <Icon name="lucide:zap" size="24px" class="text-primary" />
             </div>
@@ -84,7 +84,7 @@
           </div>
 
           <div
-            class="p-8 rounded-3xl bg-zinc-50 dark:bg-surface border border-zinc-200 dark:border-white/5 group hover:border-primary/30 transition-all duration-500">
+            class="card">
             <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
               <Icon name="lucide:code" size="24px" class="text-primary" />
 
@@ -96,7 +96,7 @@
           </div>
 
           <div
-            class="p-8 rounded-3xl bg-zinc-50 dark:bg-surface border border-zinc-200 dark:border-white/5 group hover:border-primary/30 transition-all duration-500">
+            class="card">
             <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
               <Icon name="lucide:layout-template" size="24px" class="text-primary" />
 
@@ -123,7 +123,7 @@
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
           <!-- Large Card -->
           <div
-            class="md:col-span-8 bg-zinc-50 dark:bg-surface rounded-[40px] border border-zinc-200 dark:border-white/5 p-12 overflow-hidden relative group">
+            class="md:col-span-8 card overflow-hidden relative group">
             <div class="absolute top-0 right-0 p-8">
               <div class="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold">FEATURED</div>
             </div>
@@ -157,7 +157,7 @@
 
           <!-- Vertical Card -->
           <div
-            class="md:col-span-4 bg-zinc-50 dark:bg-surface rounded-[40px] border border-zinc-200 dark:border-white/5 p-8 flex flex-col justify-between group">
+            class="md:col-span-4 card flex flex-col justify-between group">
             <div>
               <h3 class="text-2xl font-bold mb-2 text-zinc-900 dark:text-white">Pricing Cards</h3>
               <p class="text-zinc-500 dark:text-gray-500 text-sm">3 Layout variasi untuk SaaS pricing yang konversinya
