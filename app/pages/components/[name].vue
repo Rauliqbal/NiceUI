@@ -19,22 +19,15 @@ const item = componentRegistry[name]
     </h2>
     <p class="text-zinc-600 dark:text-gray-400 font-medium leading-relaxed">{{ item.description }}</p>
 
-     <div v-if="item">
-      <!-- <div class="flex items-center gap-3 mb-6">
-        <component :is="item.icon" class="w-6 h-6" />
-        
-      </div> -->
-
-      <component :is="item.component" />
+    <div v-if="item">
+      <div class="mt-10">
+        <component :is="item.component"  />
+      </div>
     </div>
 
     <div v-else>
       <h1>Component not found</h1>
     </div>
-
-    
-
-   
   </div>
 </template>
 
