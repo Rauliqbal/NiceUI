@@ -91,15 +91,5 @@ const components = computed(() =>
         </div>
       </div>
     </section>
-
-    <!-- <ul class="grid grid-cols-2 gap-4">
-      <li v-for="c in components" :key="c">
-        <NuxtLink :to="`/docs/components/${c}`">
-          <div class="p-4 border rounded hover:bg-gray-50">
-            {{ c }}
-          </div>
-        </NuxtLink>
-      </li>
-    </ul> -->
   </div>
 </template>
