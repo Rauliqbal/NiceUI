@@ -54,7 +54,7 @@ onBeforeUnmount(() => {
         <!-- RIGHT -->
         <div class="flex items-center gap-3 md:gap-4">
           <UColorModeButton />
-          <NuxtLink to="/docs/" class="hidden md:block w-full bg-primary text-black px-6 py-4 rounded-2xl text-center font-bold">
+          <NuxtLink to="/components" class="hidden md:block w-full bg-primary text-black px-6 py-4 rounded-2xl text-center font-bold">
             Get Started
           </NuxtLink>
 

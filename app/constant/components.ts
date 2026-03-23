@@ -1,5 +1,6 @@
 import AlertDocs from "~/components/docs/AlertDocs.vue";
 import ButtonDocs from "~/components/docs/ButtonDocs.vue";
+import CardDocs from "~/components/docs/CardDocs.vue";
 
 export const componentRegistry = {
   alert: {
@@ -15,6 +16,12 @@ export const componentRegistry = {
     icon: 'lucide:rectangle-ellipsis',
     variants: buttonVariants.length,
     component:  ButtonDocs,
+  },
+   card: {
+    title: 'Card',
+    description: 'Komponen Card dengan style modern dan responsif.',
+    icon: 'lucide:credit-card',
+    variants: cardVariants.length,
+    component:  CardDocs,
   }
-  // button: ButtonDocs,
 }

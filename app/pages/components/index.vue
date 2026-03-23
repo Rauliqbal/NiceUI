@@ -53,12 +53,8 @@ const components = computed(() =>
             <button @click="activeCategory = 'button'"
               :class="['px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300', activeCategory === 'button' ? 'bg-primary text-black' : 'bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10']">Button</button>
 
-            <button @click="activeCategory = 'form'"
-              :class="['px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300', activeCategory === 'form' ? 'bg-primary text-black' : 'bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10']">Form</button>
-
-            <button @click="activeCategory = 'card'"
-              :class="['px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300', activeCategory === 'card' ? 'bg-primary text-black' : 'bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10']">Card</button>
-
+              <button @click="activeCategory = 'card'"
+                :class="['px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300', activeCategory === 'card' ? 'bg-primary text-black' : 'bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10']">Card</button>
 
             <!-- <button
               class="px-6 py-2.5 rounded-full text-sm font-bold bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10 transition-all">Forms</button>

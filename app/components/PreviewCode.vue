@@ -39,7 +39,7 @@ const copyCode = async () => {
 
     <!-- Preview -->
     <template #preview>
-      <div class="card">
+      <div class="p-8 rounded-3xl bg-zinc-50 dark:bg-[#090909] border border-zinc-200 dark:border-white/5">
         <slot name="preview" />
       </div>
     </template>
