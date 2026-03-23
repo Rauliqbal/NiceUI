@@ -41,7 +41,7 @@
 
         <!-- Floating Elements Simulation -->
         <div class="relative hidden lg:block">
-          <div class="absolute -left-12 -top-56 float-anim">
+          <div class="absolute -left-12 -top-56 animate-float">
             <div class="bg-zinc-900 border border-zinc-800 p-5 rounded-2xl shadow-2xl w-72 text-left">
               <div class="flex gap-1.5 mb-4">
                 <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
@@ -55,7 +55,7 @@
                             </code>
             </div>
           </div>
-          <div class="absolute -right-12 -top-16 float-anim" style="animation-delay: -2s">
+          <div class="absolute -right-12 -top-16 animate-float" style="animation-delay: -2s">
             <div
               class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-5 rounded-2xl shadow-xl w-52 text-left">
               <div class="h-4 w-12 bg-zinc-100 dark:bg-zinc-700 rounded mb-4"></div>
