@@ -55,7 +55,7 @@ const components = Object.entries(componentRegistry)
 
 
     <section class="container py-14">
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid md:grid-cols-3 gap-4">
         <div class="card" v-for="[key, item] in components" :key="key">
           <NuxtLink :to="`/components/${key}`">
             <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
