@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-blue)
 ![Tailwind](https://img.shields.io/badge/Built_with-Tailwind_CSS_4-38BDF8?logo=tailwindcss)
 
-# ⚡ Nice UI — Lightweight Tailwind components that just work.
+# ⚡ Nice UI — Plug & Play Tailwind Components.
 
 **Nice UI** is a lightweight Tailwind CSS component library built for **copy & paste productivity**.  
 No complex setup. No vendor lock-in. Just **minimalist components that work in any frontend stack**.

@@ -1,15 +1,15 @@
 <script setup lang="ts">
 useHead({
-  title: 'Alerts - Nice UI'
+  title: 'Buttons - Nice UI'
 })
 </script>
 <template>
   <div class="space-y-8">
-    <div v-for="variant in alertVariants" :key="variant.name" class="space-y-2">
+    <div v-for="variant in buttonVariants" :key="variant.name" class="space-y-2">
 
       <h3 class="text-xl font-bold">{{ variant.name }}</h3>
       <p>{{ variant.description }}</p>
-
+      
       <PreviewCode :code="variant.code">
         <template #preview>
           <div v-html="variant.code"></div>

@@ -2,6 +2,8 @@ export const alertVariants = [
   {
     name: 'Basic Alert',
     description: 'Notifikasi dasar dengan judul dan deskripsi ',
+    author: 'Rauliqbal',
+    github: 'https://github.com/Rauliqbal',
     code: `<div class="p-4 rounded-xl bg-gray-10 border border-gray-200 dark:bg-gray-800 dark:border-gray-600">
    <div>
     <h4 class="text-gray-800 dark:text-gray-200 font-medium">Heads up!</h4>
@@ -12,6 +14,8 @@ export const alertVariants = [
   {
     name: 'Success Alert',
     description: 'Notifikasi berhasil dengan icon, judul dan deskripsi ',
+    author: 'Rauliqbal',
+    github: 'https://github.com/Rauliqbal',
     code: `<div class="p-4 rounded-xl bg-green-50 border border-green-200 dark:bg-green-900/30 dark:border-green-800">
   <div class="flex items-start gap-3">
     <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,6 +31,8 @@ export const alertVariants = [
    {
     name: 'Warning Alert',
     description: 'Notifikasi Informasi dengan icon, judul dan deskripsi ',
+    author: 'Rauliqbal',
+    github: 'https://github.com/Rauliqbal',
     code: `<div class="p-4 rounded-xl bg-yellow-50 border border-yellow-200 dark:bg-yellow-900 dark:border-yellow-600">
    <div class="flex items-start gap-3">
     <svg class="w-5 h-5 text-yellow-500 dark:text-yellow-400" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.85 8.62a4 4 0 0 1 4.78-4.77a4 4 0 0 1 6.74 0a4 4 0 0 1 4.78 4.78a4 4 0 0 1 0 6.74a4 4 0 0 1-4.77 4.78a4 4 0 0 1-6.75 0a4 4 0 0 1-4.78-4.77a4 4 0 0 1 0-6.76M12 16v-4m0-4h.01"/>
@@ -41,6 +47,8 @@ export const alertVariants = [
   {
     name: 'Error Alert',
     description: 'Notifikasi error dengan icon, judul dan deskripsi ',
+    author: 'Rauliqbal',
+    github: 'https://github.com/Rauliqbal',
     code: `<div class="p-4 rounded-xl bg-red-100 border border-red-200 dark:bg-red-900 dark:border-red-600">
    <div class="flex items-start gap-3">
     <svg class="w-5 h-5 text-red-600 dark:text-red-400" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.85 8.62a4 4 0 0 1 4.78-4.77a4 4 0 0 1 6.74 0a4 4 0 0 1 4.78 4.78a4 4 0 0 1 0 6.74a4 4 0 0 1-4.77 4.78a4 4 0 0 1-6.75 0a4 4 0 0 1-4.78-4.77a4 4 0 0 1 0-6.76M15 9l-6 6m0-6l6 6"/>

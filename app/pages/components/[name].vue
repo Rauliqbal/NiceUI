@@ -8,7 +8,7 @@ const item = componentRegistry[name]
 </script>
 
 <template>
-  <div class="relative pt-24 pb-20 px-6 max-w-7xl mx-auto z-10">
+  <div class="relative pt-24 pb-20 container z-10">
     <NuxtLink to="/components" id="back-to-library-link"
       class="inline-flex items-center gap-2 text-zinc-500 hover:text-primary transition-colors mb-6 text-sm font-bold uppercase tracking-widest">
       <Icon name="lucide:chevron-left" /> Back to Library
