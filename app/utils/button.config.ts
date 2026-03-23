@@ -12,12 +12,34 @@ export const buttonVariants = [
     `
   },
   {
+    name: 'Button Outline Primary',
+    description: '',
+    author: 'Rauliqbal',
+    github: 'https://github.com/Rauliqbal',
+    code: `<button
+   class="inline-flex rounded-lg ring-2 ring-[#fdbf28] px-3 py-2 font-semibold text-[#fdbf28] transition-all duration-200 hover:bg-[#fdbf28] hover:text-white active:scale-95 focus:ring-2 focus:ring-amber-200 focus:ring-offset-2"
+>
+   Button
+</button>`
+  },
+  {
     name: 'Button Secondary',
     description: '',
     author: 'Rauliqbal',
     github: 'https://github.com/Rauliqbal',
     code: `<button
    class="inline-flex rounded-lg bg-gray-600 px-3 py-2 font-semibold text-white transition-all duration-200 hover:bg-gray-600 active:scale-95 focus:ring-2 focus:ring-gray-200 focus:ring-offset-2"
+>
+   Button
+</button>`
+  },
+  {
+    name: 'Button Outline Secondary',
+    description: '',
+    author: 'Rauliqbal',
+    github: 'https://github.com/Rauliqbal',
+    code: `<button
+   class="inline-flex rounded-lg ring-2 ring-gray-600 px-3 py-2 font-semibold text-gray-600 transition-all duration-200 hover:bg-gray-600  hover:text-white active:scale-95 focus:ring-2 focus:ring-gray-200 focus:ring-offset-2"
 >
    Button
 </button>`

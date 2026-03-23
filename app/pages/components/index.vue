@@ -1,6 +1,19 @@
 <script setup lang="ts">
 import { componentRegistry } from '~/constant/components';
-const components = Object.entries(componentRegistry)
+
+const search = ref('')
+const activeCategory = ref('all')
+
+const components = computed(() =>
+  Object.entries(componentRegistry).filter(([_, item]) => {
+    const keyword = search.value.toLowerCase()
+    const matchSearch = item.title.toLowerCase().includes(keyword)
+    const matchCategory = activeCategory.value === 'all' || item.title.toLowerCase().includes(activeCategory.value)
+
+    return matchSearch && matchCategory
+  }
+
+  ))
 </script>
 
 <template>
@@ -29,15 +42,25 @@ const components = Object.entries(componentRegistry)
             <div class="absolute inset-y-0 left-5 flex items-center pointer-events-none">
               <Icon name="lucide:search" class="text-zinc-400 dark:text-zinc-500 text-xl" />
             </div>
-            <input type="text" placeholder="Search components (e.g. Buttons, Modals, Navbar)..."
+            <input v-model="search" type="text" placeholder="Search components (e.g. Buttons, Modals, Navbar)..."
               class="w-full h-16 pl-14 pr-6 rounded-2xl bg-white dark:bg-surface border border-zinc-200 dark:border-white/10 text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-primary transition-all">
           </div>
 
           <div class="flex flex-wrap justify-center gap-2">
-            <button class="px-6 py-2.5 rounded-full text-sm font-bold bg-primary text-black transition-all">All</button>
-            <button
-              class="px-6 py-2.5 rounded-full text-sm font-bold bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10 transition-all">Buttons</button>
-            <button
+            <button @click="activeCategory = 'all'"
+              :class="['px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300', activeCategory === 'all' ? 'bg-primary text-black' : 'bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10']">All</button>
+
+            <button @click="activeCategory = 'button'"
+              :class="['px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300', activeCategory === 'button' ? 'bg-primary text-black' : 'bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10']">Button</button>
+
+            <button @click="activeCategory = 'form'"
+              :class="['px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300', activeCategory === 'form' ? 'bg-primary text-black' : 'bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10']">Form</button>
+
+            <button @click="activeCategory = 'card'"
+              :class="['px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300', activeCategory === 'card' ? 'bg-primary text-black' : 'bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10']">Card</button>
+
+
+            <!-- <button
               class="px-6 py-2.5 rounded-full text-sm font-bold bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10 transition-all">Forms</button>
             <button
               class="px-6 py-2.5 rounded-full text-sm font-bold bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10 transition-all">Cards</button>
@@ -46,7 +69,7 @@ const components = Object.entries(componentRegistry)
             <button
               class="px-6 py-2.5 rounded-full text-sm font-bold bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10 transition-all text-nowrap">Navigation</button>
             <button
-              class="px-6 py-2.5 rounded-full text-sm font-bold bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10 transition-all">Modals</button>
+              class="px-6 py-2.5 rounded-full text-sm font-bold bg-zinc-100 dark:bg-white/5 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-white/10 transition-all">Modals</button> -->
           </div>
         </div>
 
@@ -55,6 +78,9 @@ const components = Object.entries(componentRegistry)
 
 
     <section class="container py-14">
+      <div v-if="components.length === 0" class="text-center font-bold py-20">
+        <p>No Components found.</p>
+      </div>
       <div class="grid md:grid-cols-3 gap-4">
         <div class="card" v-for="[key, item] in components" :key="key">
           <NuxtLink :to="`/components/${key}`">
