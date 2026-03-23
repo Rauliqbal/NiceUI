@@ -4,7 +4,7 @@ const components = Object.entries(componentRegistry)
 </script>
 
 <template>
-  <div>
+  <div class="relative overflow-x-hidden">
     <section
       class="relative pt-48 pb-40 bg-[#F9F9F9] dark:bg-[#0A0A0A] text-zinc-900 dark:text-white border-b border-zinc-200 dark:border-white/5">
       <div
